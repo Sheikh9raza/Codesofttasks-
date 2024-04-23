@@ -1,0 +1,26 @@
+--- a.cpp	2024-04-22 22:11:18.518775262 +0500
++++ tictactoe.cpp	2024-04-22 21:53:26.546775127 +0500
+@@ -1,23 +1 @@
+-#include<iostream>
+-using namespace std;
+-int main()
+-{
+-    float num1,num2;
+-    char operation;
+-    cout<<"enter 1st number:";
+-    cin>>num1;
+-    cout<<"enter 2nd number:";
+-    cin>>num2;
+-    cout<<"enter operation:";
+-    cin>>operation;
+-    if(operation=='*')
+-        cout<<num1*num2;
+-    if(operation=='/')
+-        cout<<num1/num2;
+-    if(operation=='+')
+-        cout<<num1+num2;
+-    if(operation=='-')
+-        cout<<num1-num2;
+-    return 0;
+-}
+ 

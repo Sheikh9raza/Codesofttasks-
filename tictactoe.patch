@@ -1,0 +1,90 @@
+--- task.cpp	2024-04-10 00:12:03.977253295 +0500
++++ tictactoe.cpp	2024-04-22 21:53:26.546775127 +0500
+@@ -1,87 +1 @@
+-#include<iostream>
+-#include<stdlib.h>
+-using namespace std;
+-int main()
+-{
+-    do
+-    {int i=0,j=0,num1=0,num2=0,m=0,l=0,k=0;
+-    int board[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+-    char decision;
+-    cout<<"TIC TAC TOE"<<endl;
+-    for(i=0;i<=2;i++)
+-    {
+-        for(j=0;j<=2;j++)
+-            {
+-              cout<<board[i][j];
+-              if(j<2)
+-                cout<<"|";
+-            }
+-            cout<<endl;
+-            if(i<2)
+-                cout<<"-----"<<endl;
+-    }
+-    while(true)
+-    {
+-        if(m==0)
+-{if((board[1][2]==10&&board[1][1]==10&&board[1][0]==10)||(board[0][2]==10&&board[0][1]==10&&board[0][0]==10)||(board[2][2]==10&&board[2][1]==10&&board[2][0]==10))
+-        {cout<<"player1 wins!";break;}
+-if((board[0][0]==10&&board[1][0]==10&&board[2][0]==10)||(board[0][1]==10&&board[1][1]==10&&board[2][1]==10)||(board[0][2]==10&&board[1][2]==10&&board[2][2]==10))
+-        {cout<<"player1 wins!";break;}
+-if((board[1][2]==11&&board[1][1]==11&&board[1][0]==11)||(board[0][2]==11&&board[0][1]==11&&board[0][0]==11)||(board[2][2]==11&&board[2][1]==11&&board[2][0]==11))
+-        {cout<<"player2 wins!";break;}
+-if((board[0][0]==11&&board[1][0]==11&&board[2][0]==11)||(board[0][1]==11&&board[1][1]==11&&board[2][1]==11)||(board[0][2]==11&&board[1][2]==11&&board[2][2]==11))
+-        {cout<<"player2 wins!";break;}
+-if((board[2][2]==11&&board[1][1]==11&&board[0][0]==11)||(board[2][0]==11&&board[1][1]==11&&board[0][2]==11))
+-        {cout<<"player2 wins!";break;}
+-if((board[2][2]==10&&board[1][1]==10&&board[0][0]==10)||(board[2][0]==10&&board[1][1]==10&&board[0][2]==10))
+-        {cout<<"player1 wins!";break;}
+-if(k==9)
+-    {cout<<"it's a draw!";break;}}
+-    if(l%2==0)
+-    {cout<<"NOTE:please enter the box number you want to mark and if you enter marked box number your turn will be wasted!"<<endl;
+-    cout<<"player 1:";cin>>num1;system("clear");cout<<"TIC TAC TOE"<<endl;}
+-    if(l%2!=0)
+-    {cout<<"NOTE:please enter the box number you want to mark! and if you enter marked box number your turn will be wasted!"<<endl;
+-    cout<<"player 2:";cin>>num2;system("clear");cout<<"TIC TAC TOE"<<endl;}
+-    for(i=0;i<=2;i++)
+-    {
+-        for(j=0;j<=2;j++)
+-            {
+-              if(board[i][j]==num1||board[i][j]==num2)
+-              {
+-                  if(board[i][j]==num1)
+-                    {cout<<"x";board[i][j]=10;}
+-                  if(board[i][j]==num2)
+-                    {cout<<"o";board[i][j]=11;}
+-              }
+-              else
+-              {
+-                  if(board[i][j]!=10&&board[i][j]!=11)
+-                    cout<<board[i][j];
+-                  else
+-                  {
+-                      if(board[i][j]==10)
+-                        cout<<"x";
+-                      else
+-                        cout<<"o";
+-                  }
+-              }
+-              if(j<2)
+-                {cout<<"|";}
+-            }
+-            cout<<endl;
+-            if(i<2)
+-                {cout<<"-----"<<endl;}
+-                l++;}
+-            k++;
+-    }
+-    cout<<"\nRestart (y/n) ?";cin>>decision;
+-        if(decision=='n')
+-            break;
+-             else
+-                system("clear");
+-             }
+-            while(true);
+-    return 0;
+-}
+ 

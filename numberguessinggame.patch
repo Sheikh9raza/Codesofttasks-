@@ -1,0 +1,35 @@
+--- Untitled1.cpp	2024-04-05 15:20:55.431560018 +0500
++++ tictactoe.cpp	2024-04-22 21:53:26.546775127 +0500
+@@ -1,31 +1 @@
+-#include<iostream>
+-#include<cstdlib>
+-using namespace std;
+-int main()
+-{
+-    int enterednumber,randomnumber;
+-    cout<<"*****guess the number*****"<<endl;
+-    cout<<"press '0' to forfeit"<<endl;
+-    randomnumber=rand()%500;
+-    do
+-    {
+-        cin>>enterednumber;
+-         if(enterednumber==0)
+-        {
+-            cout<<"you forfeited!"<<endl;
+-            cout<<"the number was:"<<randomnumber;
+-            break;
+-        }
+-        if(enterednumber==randomnumber)
+-            {
+-                cout<<"you won!";
+-                break;
+-            }
+-        if(enterednumber<randomnumber)
+-            cout<<"number is low!"<<endl;
+-        if(enterednumber>randomnumber)
+-            cout<<"number is high!"<<endl;
+-    }
+-    while(true);
+-        return 0;
+-}
++
